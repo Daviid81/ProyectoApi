@@ -8,7 +8,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Socio {
-    private long id;
+    @Autowired
+    @Id
+    private String dni;
     private String name;
+    private String lastname;
 
 }

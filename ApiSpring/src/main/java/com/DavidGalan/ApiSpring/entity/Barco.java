@@ -13,9 +13,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class Barco {
+    @Autowired
+
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Long id;
+    private long id;
+    private double cuota;
+    private String amarre;
     private String name;
     private String matricula;
     private int socioId;
